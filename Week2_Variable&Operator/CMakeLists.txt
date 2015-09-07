@@ -1,0 +1,4 @@
+cmake_minimum_required (VERSION 2.6)
+project (Variable)
+add_executable(varible_size 4_variable_size.cpp)
+add_executable(scope 5_scope.cpp)
