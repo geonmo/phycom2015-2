@@ -10,6 +10,6 @@ public :
   UOSRandom();
   UOSRandom(int max);
   UOSRandom(int min, int max);
-  ~UOSRandom();
+  ~UOSRandom(){};
   int getRandom();
 };

@@ -1,20 +1,27 @@
 #include"UOSRandom.h"
 
 UOSRandom::UOSRandom(){
-  rand_max=0;
   srand( time(NULL) );
+  rand_min=0;
+  rand_max=0;
 }
 
 UOSRandom::UOSRandom(int max) {
-  rand_max= max;
   srand( time(NULL) );
+  rand_min=0;
+  rand_max= max;
 }
 UOSRandom::UOSRandom(int min, int max) {
+  srand( time(NULL) );
   rand_min= min;
   rand_max= max;
-  srand( time(NULL) );
 }
 
 int UOSRandom::getRandom(){
-  return rand()%rand_max+rand_min;
+  if ( rand_max !=0 ) {
+    return rand()%rand_max+rand_min;
+  }
+  else {
+    return rand()+rand_min;
+  }
 }
