@@ -1,3 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
 project (Function)
 add_executable(UOSAbs 4_UOS_abs.cpp)
+add_executable(UOSAbs2 5_UOS_abs2.cpp)
+add_executable(UOSAbs3 6_UOS_abs_header.cpp)
