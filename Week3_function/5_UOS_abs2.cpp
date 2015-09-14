@@ -2,7 +2,7 @@
 
 // std::abs와 구분을 하기 위하여 namespace로 구분해줌.
 namespace UOS{
-  float abs(float arg);
+  float abs(float);
 }
 
 int main()

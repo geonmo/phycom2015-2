@@ -1,3 +1,3 @@
 namespace UOS{
-  float abs(float arg);
+  float abs(float );
 }
