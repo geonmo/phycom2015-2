@@ -23,6 +23,8 @@ int main()
   vec_data.push_back( 1 );   // vec_data ={1};
   vec_data.push_back( 2 );   // vec_data ={1,2};
   cout<<"vector [1] : "<<vec_data[1]<<endl;
+  vec_data.pop_back();       // vec_data ={1};
+  cout<<"vec_data's size : "<<vec_data.size()<<endl;
   
   // vector의 내부내용 삭제
   vec_data.clear();
@@ -39,7 +41,10 @@ int main()
   deq_data.push_front(1);      // deq_data={1,2};
   deq_data.push_back(3);       // deq_data={1,2,3};
   cout<<"deque [2] :" << deq_data[2]<<endl;
-  
+  deq_data.pop_front();        // deq_data={2,3};
+  cout<<"deque [1] :" << deq_data[1]<<endl;
+ 
+ 
   deq_data.clear();
   
   deq_data.assign(10,0);       // deq_data={0,0,0,0,0,0,0,0,0,0}
