@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (Pointer)
+add_executable(pointer_ex1 4_pointer.cpp)
+add_executable(pointer_ex2 5_pointer_for_small.cpp)
+add_executable(pointer_ex3 8_swap.cpp)
