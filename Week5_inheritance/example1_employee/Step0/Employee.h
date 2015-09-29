@@ -10,7 +10,6 @@ private:
   int day_of_service_;
   int salary_day_;
 public:
-  Employee(Employee&);
   Employee(string name, string title);
   void doWork();
   void goVacation();
